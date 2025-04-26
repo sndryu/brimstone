@@ -1,264 +1,288 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ブリムストーンのモロトフ空爆 (マップ別)</title>
     <title>ブリム空爆集</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        /* マップ選択ボタンのスタイル */
-        .map-selector {
-            display: flex;
-            flex-wrap: wrap; /* 画面幅が狭い場合に折り返す */
-            justify-content: center;
-            margin-bottom: 20px;
-            gap: 10px;
-        }
+<link rel="stylesheet" href="style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-xxxxxxxxxxxxxxxx"
+crossorigin="anonymous"></script>
+<style>
+/* マップ選択ボタンのスタイル */
+.map-selector {
+display: flex;
+flex-wrap: wrap; /* 画面幅が狭い場合に折り返す */
+justify-content: center;
+margin-bottom: 20px;
+gap: 10px;
+}
 
-        .map-selector button {
-            padding: 10px 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            background-color: #f9f9f9;
-            cursor: pointer;
-        }
+.map-selector button {
+padding: 10px 20px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background-color: #f9f9f9;
+cursor: pointer;
+}
 
-        .map-selector button.active {
-            background-color: #e44d26; /* Valorantっぽい強調色 */
-            color: #fff;
-            border-color: #e44d26;
-        }
+.map-selector button.active {
+background-color: #e44d26; /* Valorantっぽい強調色 */
+color: #fff;
+border-color: #e44d26;
+}
 
-        /* 各マップのセクションを最初は非表示にする */
-        .map-section {
-            display: none;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-        }
+/* 各マップのセクションを最初は非表示にする */
+.map-section {
+display: none;
+padding: 20px;
+background-color: #fff;
+border-radius: 5px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+margin-bottom: 20px;
+}
 
-        /* 最初のマップセクションは表示 */
-        #ascent {
-            display: block;
-        }
-        body {
-    font-family: sans-serif;
-    margin: 20px;
-    background-color: #f4f4f4;
-    color: #333;
+/* 最初のマップセクションは表示 */
+#ascent {
+display: block;
+}
+body {
+font-family: sans-serif;
+margin: 20px;
+background-color: #f4f4f4;
+color: #333;
 }
 
 header {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #333;
-    color: #fff;
-    margin-bottom: 20px;
+text-align: center;
+padding: 20px 0;
+background-color: #333;
+color: #fff;
+margin-bottom: 20px;
 }
 
 main {
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+padding: 20px;
+background-color: #fff;
+border-radius: 5px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .molotov-technique, .molotov-spots {
-    margin-bottom: 30px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #ddd;
+margin-bottom: 30px;
+padding-bottom: 20px;
+border-bottom: 1px solid #ddd;
 }
 
 .molotov-technique:last-child, .molotov-spots:last-child {
-    border-bottom: none;
+border-bottom: none;
 }
 
 h2 {
-    color: #e44d26; /* Valorantっぽい色 */
-    margin-top: 0;
+color: #e44d26; /* Valorantっぽい色 */
+margin-top: 0;
 }
 
 .image-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 15px 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 15px 0;
 }
 
 .image-container img {
-    max-width: 100%;
-    height: auto;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+max-width: 100%;
+height: auto;
+border: 1px solid #ccc;
+border-radius: 3px;
 }
 
 .caption {
-    margin-top: 5px;
-    font-size: 0.9em;
-    color: #777;
-    text-align: center;
+margin-top: 5px;
+font-size: 0.9em;
+color: #777;
+text-align: center;
 }
 
 footer {
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-    background-color: #333;
-    color: #fff;
-    border-radius: 5px;
+text-align: center;
+padding: 10px 0;
+margin-top: 20px;
+background-color: #333;
+color: #fff;
+border-radius: 5px;
 }
-    </style>
+</style>
 </head>
 <body>
-    <header>
-        <h1>ブリムストーンのモロトフ空爆 (マップ別)</h1>
-        <p>各マップのブリム空爆を週に数個程度更新していきます</p>
-    </header>
+<header>
+<h1>ブリムストーンのモロトフ空爆 (マップ別)</h1>
+<p>各マップにおけるブリムストーンのモロトフ空爆の活用法を紹介します。</p>
+</header>
 
-    <main>
-        <div class="map-selector">
-            <button onclick="showMap('ascent')" class="active">アセント</button>
-           <button onclick="showMap('bind')">バインド</button>
-            <button onclick="showMap('haven')">ヘイヴン</button>
-            <button onclick="showMap('split')">スプリット</button>
-            <button onclick="showMap('icebox')">アイスボックス</button>
-            <button onclick="showMap('breeze')">ブリーズ</button>
-            <button onclick="showMap('fracture')">フラクチャー</button>
-            <button onclick="showMap('pearl')">パール</button>
-            <button onclick="showMap('lotus')">ロータス</button>
-            <button onclick="showMap('sunset')">サンセット</button>
-        </div>
+<main>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
+data-ad-slot="zzzzzzzzzzz"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
-        <section id="ascent" class="map-section">
-            <h2>アセント</h2>
-            <h2>Aロビーから黒コン設置の空爆</h2>
-            <h4>着弾まで約6秒</h4>
-            <div class="image-container">
-                <img src="ascentA-spike-morotov.png" alt="アセント Aサイト 黒コンテナ設置地点" width="500">
-                <img src="ascentA-stand.png" alt="アセント Aサイト 黒コンテナ設置 空爆立ち位置（Aロビー ガラス箱の角）" width="500">
-                <h4>Aロビーのガラス箱の角に立ちます</h4>
-                <img src="ascentA-morotov.png" alt="アセント Aサイト 黒コンテナ設置 空爆エイム位置" width="500">
-                <img src="ascentA-morotov-target.png" alt="アセント Aサイト 黒コンテナ設置 空爆エイム位置 拡大（体力UIの上に出ている先を角に合わせる）" width="500">
-                <h4>体力UIの上に出ている先を角に合わせます</h4>
-            </div>
-            <h2>Aロビーからオープン設置</h2>
-            <h4>着弾まで約3秒</h4>
-            <div class="image-container">
-                <img src="ascentA-open-spike-morotov.png" alt="アセント Aサイト オープン設置地点" width="500">
-                <img src="ascentA-stand.png" alt="アセント Aサイト オープン設置 空爆立ち位置（Aロビー ガラス箱の角）" width="500">
-                <h4>Aロビーのガラス箱の角に立ちます</h4>
-                <img src="ascentA-open-morotov.png" alt="アセント Aサイト オープン設置 空爆エイム位置" width="500">
-                <img src="ascentA-open-morotov-target.png" alt="アセント Aサイト オープン設置 空爆エイム位置 拡大（建物と石の付け根に合わせる）" width="500">
-                <h4>建物と石の付け根に合わせます</h4>
-            </div>
-            <h2>Aワインからオープン設置</h2>
-            <h4>着弾まで約8秒</h4>
-            <div class="image-container">
-                <img src="ascentA-wine-spike-plant.png" alt="アセント Aサイト オープン設置地点（ワイン側）" width="500">
-                <img src="ascentA-wine-stand.png" alt="アセント Aサイト オープン設置 空爆立ち位置（Aワインの角）" width="500">
-                <h4>Aワインの角に立ちます</h4>
-                <img src="ascentA-wine-morotov.png" alt="アセント Aサイト オープン設置 空爆エイム位置（ワイン側）" width="500">
-                <img src="ascentA-wine-morotov-target.png" alt="アセント Aサイト オープン設置 空爆エイム位置 拡大（電線の隙間の真ん中に合わせる）" width="500">
-                <h4>電線の隙間の真ん中に合わせます</h4>
-            </div>
-       <section id="bind" class="map-section">
-            <h2>バインド</h2>
-            <p>バインドにおけるブリムストーンのモロトフ空爆のポイント。</p>
-            <div class="image-container">
-                <img src="bind_molotov1.jpg" alt="バインド Aショート攻撃例" width="500">
-                <p class="caption">バインド Aショート攻撃例</p>
-            </div>
-            </section>
+<div class="map-selector">
+<button onclick="showMap('ascent')" class="active">アセント</button>
+<!--  <button onclick="showMap('bind')">バインド</button>-->
+<button onclick="showMap('haven')">ヘイヴン</button>
+<!-- <button onclick="showMap('split')">スプリット</button>
+           <button onclick="showMap('icebox')">アイスボックス</button>
+           <button onclick="showMap('breeze')">ブリーズ</button>-->
+<!--<button onclick="showMap('fracture')">フラクチャー</button>-->
+<!--<button onclick="showMap('pearl')">パール</button>
+           <button onclick="showMap('lotus')">ロータス</button>
+           <button onclick="showMap('sunset')">サンセット</button>-->
+</div>
 
-       <section id="haven" class="map-section">
-    <h2>ヘイヴン</h2>
-    <h2>Aロングからのノーマル設置</h2>
-    <h4>着弾まで約6.5秒</h4>
-    <div class="image-container">
-        <img src="heaven1.png" alt="ヘイヴン Aロング ノーマル設置1" width="500">
-        <img src="heaven2.png" alt="ヘイヴン Aロング ノーマル設置 立ち位置（黄色い袋の上）" width="500">
-        <h4>Aロングの黄色い袋の上に立ちます</h4>
-        <img src="heaven3.png" alt="ヘイヴン Aロング ノーマル設置 エイム位置（石の右上）" width="500">
-        <img src="heaven4.png" alt="ヘイヴン Aロング ノーマル設置 エイム拡大（石の右上）" width="500">
-        <h4>インセンディアリーを上の部分を石の右上に合わせます</h4>
-    </div>
-    <h2>Aロングからのノーマル設置</h2>
-    <h4>着弾まで約8秒</h4>
-    <div class="image-container">
-        <img src="heaven5.png" alt="ヘイヴン Aロング ノーマル設置2" width="500">
-        <img src="heaven2.png" alt="ヘイヴン Aロング ノーマル設置 立ち位置（黄色い袋の上）" width="500">
-        <h4>Aロングの黄色い袋の上に立ちます</h4>
-        <img src="heaven6.png" alt="ヘイヴン Aロング ノーマル設置 エイム位置2（右から二番目の石の右上）" width="500">
-        <img src="heaven7.png" alt="ヘイヴン Aロング ノーマル設置 エイム拡大2（右から二番目の石の右上）" width="500">
-        <h4>インセンディアリーの上の部分を右から二番目の石の右上に合わせます</h4>
-    </div>
+<section id="ascent" class="map-section">
+<h2>アセント</h2>
+<h2>Aロビーから黒コン設置の空爆</h2>
+<h4>着弾まで約6秒</h4>
+<div class="image-container">
+<img src="ascentA-spike-morotov.png" alt="アセント" width="500">
+<img src="ascentA-stand.png" alt="アセントA空爆立ち位置" width="500">
+<h4>Aロビーのガラス箱の角に立ちます</h4>
+<img src="ascentA-morotov.png" alt="アセントA空爆位置" width="500">
+<img src="ascentA-morotov-target.png" alt="拡大" width="500">
+<h4>体力UIの上に出ている先を角に合わせます</h4>
+
+<p class="caption">アセント Aサイト黒コンテナ設置</p>
+</div>
+<h2>Aロビーからオープン設置</h2>
+<h4>着弾まで約3秒</h4>
+<div class="image-container">
+<img src="ascentA-open-spike-morotov.png" alt="アセント" width="500">
+<img src="ascentA-stand.png" alt="アセントAオープン空爆立ち位置" width="500">
+<h4>Aロビーのガラス箱の角に立ちます</h4>
+<img src="ascentA-open-morotov.png" alt="アセントA空爆位置" width="500">
+<img src="ascentA-open-morotov-target.png" alt="拡大" width="500">
+<h4>建物と石の付け根に合わせます</h4>
+<p class="caption">アセント Aサイトオープン設置</p>
+</div>
+<h2>Aワインからオープン設置</h2>
+<h4>着弾まで約8秒</h4>
+<div class="image-container">
+<img src="ascentA-wine-spike-plant.png" alt="アセント" width="500">
+<img src="ascentA-wine-stand.png" alt="アセント" width="500">
+<h4>Aワインの角に立ちます</h4>
+<img src="ascentA-wine-morotov.png" alt="アセント" width="500">
+<img src="ascentA-wine-morotov-target.png" alt="アセント" width="500">
+<h4>電線の隙間の真ん中に合わせます</h4>
+<p class="caption">アセント Aサイトオープン設置</p>
+</div>
+
+<!--<div class="image-container">
+               <img src="ascent_molotov2.jpg" alt="アセント モロトフ2">
+               <p class="caption">アセント Bサイト防衛例</p>
+           </div>
+           </section>
+
+       <!--<section id="bind" class="map-section">
+           <h2>バインド</h2>
+           <p>バインドにおけるブリムストーンのモロトフ空爆のポイント。</p>
+           <div class="image-container">
+               <img src="bind_molotov1.jpg" alt="バインド モロトフ1">
+               <p class="caption">バインド Aショート攻撃例</p>
+           </div>
+           </section>-->
+
+<section id="haven" class="map-section">
+<h2>ヘイヴン</h2>
+<h2>Aロングからのノーマル設置</h2>
+<h4>着弾まで約6.5秒</h4>
+<div class="image-container">
+<img src="heaven1" alt="" width="500">
+<img src="heaven2" alt="" width="500">
+<h4>Aロングの黄色い袋の上に立ちます</h4>
+<img src="heaven3" alt="" width="500">
+<img src="heaven4" alt="拡大" width="500">
+<h4>インセンディアリーを上の部分を石の右上に合わせます</h4>
+</div>
 </section>
 
-        <section id="split" class="map-section">
-            <h2>スプリット</h2>
-            <p>スプリットにおけるブリムストーンのモロトフ空爆のポイント。</p>
-            <div class="image-container">
-                <img src="split_molotov1.jpg" alt="スプリット Aメイン封鎖例" width="500">
-                <p class="caption">スプリット Aメイン封鎖例</p>
-            </div>
-            </section>
+<!-- <section id="split" class="map-section">
+           <h2>スプリット</h2>
+           <p>スプリットにおけるブリムストーンのモロトフ空爆のポイント。</p>
+           <div class="image-container">
+               <img src="split_molotov1.jpg" alt="スプリット モロトフ1">
+               <p class="caption">スプリット Aメイン封鎖例</p>
+           </div>
+           </section>
 
-        <section id="icebox" class="map-section">
-            <h2>アイスボックス</h2>
-            <p>アイスボックスにおけるブリムストーンのモロトフ空爆のポイント。</p>
-            </section>
+       <section id="icebox" class="map-section">
+           <h2>アイスボックス</h2>
+           <p>アイスボックスにおけるブリムストーンのモロトフ空爆のポイント。</p>
+           </section>
 
-        <section id="breeze" class="map-section">
-            <h2>ブリーズ</h2>
-            <p>ブリーズにおけるブリムストーンのモロトフ空爆のポイント。</p>
-            </section>
+       <section id="breeze" class="map-section">
+           <h2>ブリーズ</h2>
+           <p>ブリーズにおけるブリムストーンのモロトフ空爆のポイント。</p>
+           </section>-->
 
-       <section id="fracture" class="map-section">
-            <h2>フラクチャー</h2>
-            <p>フラクチャーにおけるブリムストーンのモロトフ空爆のポイント。</p>
-            </section>
+<!-- <section id="fracture" class="map-section">
+           <h2>フラクチャー</h2>
+           <p>フラクチャーにおけるブリムストーンのモロトフ空爆のポイント。</p>
+           </section>
 
-        <section id="pearl" class="map-section">
-            <h2>パール</h2>
-            <p>パールにおけるブリムストーンのモロトフ空爆のポイント。</p>
-            </section>
+      <!-- <section id="pearl" class="map-section">
+           <h2>パール</h2>
+           <p>パールにおけるブリムストーンのモロトフ空爆のポイント。</p>
+           </section>
 
-        <section id="lotus" class="map-section">
-            <h2>ロータス</h2>
-            <p>ロータスにおけるブリムストーンのモロトフ空爆のポイント。</p>
-            </section>
+       <section id="lotus" class="map-section">
+           <h2>ロータス</h2>
+           <p>ロータスにおけるブリムストーンのモロトフ空爆のポイント。</p>
+           </section>
 
-        <section id="sunset" class="map-section">
-            <h2>サンセット</h2>
-            <p>サンセットにおけるブリムストーンのモロトフ空爆のポイント。</p>
-            </section>
-    </main>
+       <section id="sunset" class="map-section">
+           <h2>サンセット</h2>
+           <p>サンセットにおけるブリムストーンのモロトフ空爆のポイント。</p>
+           </section>-->
 
-    <footer>
-        <p>&copy; sndryu</p>
-    </footer>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
+data-ad-slot="wwwwwwwwwww"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</main>
 
-    <script>
-        function showMap(mapId) {
-            const mapSections = document.querySelectorAll('.map-section');
-            const mapButtons = document.querySelectorAll('.map-selector button');
+<footer>
+<p>&copy; 2025 sndryu</p>
+</footer>
 
-            mapSections.forEach(section => {
-                section.style.display = 'none';
-            });
+<script>
+function showMap(mapId) {
+const mapSections = document.querySelectorAll('.map-section');
+const mapButtons = document.querySelectorAll('.map-selector button');
 
-            mapButtons.forEach(button => {
-                button.classList.remove('active');
-            });
+mapSections.forEach(section => {
+section.style.display = 'none';
+});
 
-            document.getElementById(mapId).style.display = 'block';
-            const activeButton = document.querySelector(`.map-selector button[onclick="showMap('${mapId}')"]`);
-            if (activeButton) {
-                activeButton.classList.add('active');
-            }
-        }
-    </script>
+mapButtons.forEach(button => {
+button.classList.remove('active');
+});
+
+document.getElementById(mapId).style.display = 'block';
+const activeButton = document.querySelector(`.map-selector button[onclick="showMap('${mapId}')"]`);
+if (activeButton) {
+activeButton.classList.add('active');
+}
+}
+</script>
 </body>
 </html>
